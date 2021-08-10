@@ -59,6 +59,8 @@
   
 
   
+    <script src='//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
+  
 <meta name="generator" content="Hexo 5.4.0"></head>
     <body data-color-scheme="auto">
         <nav id="theme-nav">
@@ -145,6 +147,20 @@
     </div>
 
     
+        
+        <div class="container">
+            <div id="waline"></div>
+            <script>
+                new Waline({
+                    el: "#waline",
+                    
+                    path: location.pathname,
+                    
+                    serverURL: 'https://blog-api-i4unt16re-yida8676.vercel.app/ui/profile',
+                    
+                });
+            </script>
+        </div>
         
     
 </article>
